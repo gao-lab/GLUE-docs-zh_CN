@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Gao Lab, 2022
+# This file is distributed under the same license as the scglue package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scglue 0.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-14 12:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../training.ipynb:9
+msgid "Stage 2: Model training"
+msgstr "阶段 2: 模型训练"
+
+#: ../training.ipynb:49
+msgid "Read preprocessed data"
+msgstr "读取预处理数据"
+
+#: ../training.ipynb:60
+msgid ""
+"First, read the preprocessed data as produced by `stage 1 "
+"<preprocessing.ipynb>`__."
+msgstr "首先，读取 `阶段 1 "
+"<preprocessing.ipynb>`__ 产生的预处理数据。"
+
+#: ../training.ipynb:84
+msgid "Configure data"
+msgstr "配置数据"
+
+#: ../training.ipynb:95
+msgid "(Estimated time: negligible)"
+msgstr "（预计时间：可忽略不计）"
+
+#: ../training.ipynb:106
+msgid ""
+"Before model training, we need to configure the datasets using "
+"`scglue.models.configure_dataset "
+"<api/scglue.models.scglue.configure_dataset.rst>`__. For each dataset to "
+"be integrated, we specify the probabilistic generative model to use. Here"
+" we model the raw counts of both scRNA-seq and scATAC-seq using the "
+"negative binomial distribution (``\"NB\"``)."
+msgstr "在模型训练之前，我们需要使用`scglue.models.configure_dataset "
+"<api/scglue.models.scglue.configure_dataset.rst>`__ 来配置数据集。对于每个要整合的数据集，我们指定要使用的概率生成模型。这里我们使用负二项分布(``NB``)对scRNA-seq和scATAC-seq的原始计数进行建模。"
+
+#: ../training.ipynb:108
+msgid ""
+"Optionally, we can specify whether only the highly variable features "
+"should be used (``use_highly_variable``), what data layer to use "
+"(``use_layer``), as well as what preprocessing embedding (``use_rep``) to"
+" use as first encoder transformation."
+msgstr "可选的，我们可以指定是否只使用高度可变的特征（``use_highly_variable``），使用什么数据层（``use_layer``），以及使用什么预处理嵌入（``use_rep``）作为第一个编码器转换。"
+
+#: ../training.ipynb:110
+msgid ""
+"For the scRNA-seq data, we use the `previously backed up "
+"<preprocessing.ipynb#Preprocess-scRNA-seq-data>`__ raw counts in the "
+"“counts” layer, and use the PCA embedding as the first encoder "
+"transformation."
+msgstr "对于scRNA-seq数据，我们在 counts 层中使用`先前的备份 "
+"<preprocessing.ipynb#Preprocess-scRNA-seq-data>`__ 的原始计数，并使用PCA嵌入作为第一个编码器转换。"
+
+#: ../training.ipynb:111
+msgid ""
+"For the scATAC-seq data, the raw counts are just ``atac.X``, so it’s "
+"unnecessary to specify ``use_layer``. We use the LSI embedding as the "
+"first encoder transformation."
+msgstr "对于scATAC-seq数据，原始计数只是 ``atac.X``，所以没有必要指定 ``use_layer``。我们使用LSI嵌入作为第一个编码器的转换。"
+
+#: ../training.ipynb:148
+msgid ""
+"Accordingly, we also subset the prior graph to retain highly variable "
+"features only."
+msgstr "因此，我们也对先验图进行子集，只保留高度可变的特征。"
+
+#: ../training.ipynb:173
+msgid "Build and train GLUE model"
+msgstr "建立和训练GLUE模型"
+
+#: ../training.ipynb:184
+msgid "(Estimated time: 15-60 min, depending on computation device)"
+msgstr "（预计时间：15-60分钟，取决于计算设备）"
+
+#: ../training.ipynb:195
+msgid ""
+"Next we train a `GLUE model <api/scglue.models.scglue.SCGLUEModel.rst>`__"
+" for integrating the two omics layers."
+msgstr "接下来我们训练一个GLUE模型来整合两个组学层。"
+
+#: ../training.ipynb:197
+msgid ""
+"The datasets to be integrated are specified as a ``dict``, where the keys"
+" are domain names. The domain names can be set at your discretion, as "
+"long as they are kept consistent (see below)."
+msgstr "要整合的数据集被指定为一个```dict`` ，其中的键是域名。域名可以由你决定，只要它们保持一致（见下文）。"
+
+#: ../training.ipynb:198
+msgid ""
+"Here we specified a directory to the fit function where model snapshots "
+"and training logs will be stored."
+msgstr "在这里，我们为fit函数指定了一个目录，模型快照和训练日志将被储存在这里。"
+
+#: ../training.ipynb:199
+msgid ""
+"For more advanced usages, please refer to the `function documentation "
+"<api/scglue.models.fit_SCGLUE.rst>`__."
+msgstr "对于更高级的用法，请参考 `函数文档 "
+"<api/scglue.models.fit_SCGLUE.rst>`__。"
+
+#: ../training.ipynb:412
+msgid ""
+"If you have tensorboard installed, you can monitor the training progress "
+"by running ``tensorboard --logdir=glue`` at the command line."
+msgstr "如果你安装了tensorboard，你可以通过在命令行运行 ``tensorboard --logdir=glue`` 来监控训练的进展。"
+
+#: ../training.ipynb:423
+msgid ""
+"After convergence, the trained model can be saved and loaded as “.dill” "
+"files."
+msgstr "在收敛之后，训练后的模型可以被保存和加载为 .dill 文件。"
+
+#: ../training.ipynb:446
+msgid "Check integration diagnostics"
+msgstr "检查集成诊断程序"
+
+#: ../training.ipynb:457 ../training.ipynb:694
+msgid "(Estimated time: ~2 min)"
+msgstr "（预计时间：约2分钟）"
+
+#: ../training.ipynb:468
+msgid ""
+"To check whether the integration is reliable, we provide an “integration "
+"consistency score”, which quantifies the consistency between the "
+"integration result and the guidance graph. The score can be computed "
+"using the `scglue.models.integration_consistency "
+"<api/scglue.models.dx.integration_consistency.rst>`__ function."
+msgstr "为了检查整合是否可靠，我们提供了一个 integration "
+"consistency score，它量化了整合结果和指导图之间的一致性。这个分数可以通过 `scglue.models.integration_consistency "
+"<api/scglue.models.dx.integration_consistency.rst>`__ 函数来计算。"
+
+#: ../training.ipynb:470
+msgid ""
+"We need to provide the function with the trained model, data, as well as "
+"the guidance graph."
+msgstr "我们需要向该函数提供训练好的模型、数据以及指导图。"
+
+#: ../training.ipynb:471
+msgid ""
+"We also need to explicitly specify layers containing raw counts if it is "
+"not ``.X``."
+msgstr "如果不是 ``.X``，我们还需要明确指定包含原始计数的层。"
+
+#: ../training.ipynb:637
+msgid ""
+"Notice that the consistency score is computed across different numbers of"
+" “metacells”, which can be visualized as a curve:"
+msgstr "请注意，一致性分数是在不同数量的 metacells 中计算出来的，它可以被可视化为一条曲线。"
+
+#: ../training.ipynb:671
+msgid ""
+"The higher is curve gets, the more confident the integration is. "
+"Empirically, it is safe to assume that the integration is reliable if the"
+" curve is above the 0.05 line."
+msgstr "曲线越高，积分就越有信心。根据经验，如果曲线在0.05线以上，就可以认为整合是可靠的。"
+
+#: ../training.ipynb:683
+msgid "Apply model for cell and feature embedding"
+msgstr "应用细胞和特征嵌入的模型"
+
+#: ../training.ipynb:705
+msgid ""
+"With the trained model, we can use the `encode_data "
+"<api/scglue.models.scglue.SCGLUEModel.encode_data.rst>`__ method to "
+"project the single-cell omics data to cell embeddings. The first argument"
+" to `encode_data "
+"<api/scglue.models.scglue.SCGLUEModel.encode_data.rst>`__ specifies the "
+"domain to encode (one of the previous domain names), and the second "
+"specifies the dataset to be encoded. By convention, we store the cell "
+"embeddings in the `obsm "
+"<https://anndata.readthedocs.io/en/latest/anndata.AnnData.obsm.html#anndata.AnnData.obsm>`__"
+" slot, with name ``\"X_glue\"``."
+msgstr "
+有了训练有素的模型，我们可以使用 `encode_data "
+"<api/scglue.models.scglue.SCGLUEModel.encode_data.rst>`__ 方法将单细胞全息数据投射到细胞嵌入。`encode_data "
+"<api/scglue.models.scglue.SCGLUEModel.encode_data.rst>`__ 的第一个参数指定了要编码的域（以前的域名称之一），第二个参数指定了要编码的数据集。按照惯例，我们将细胞嵌入存储在 `obsm "
+"<https://anndata.readthedocs.io/en/latest/anndata.AnnData.obsm.html#anndata.AnnData.obsm>`__槽中，名称为 ``X_glue``。"
+
+#: ../training.ipynb:728
+msgid ""
+"To jointly visualize the cell embeddings from two omics layers, we "
+"construct a combined dataset."
+msgstr "为了联合可视化来自两个omics层的细胞嵌入，我们构建了一个组合数据集。"
+
+#: ../training.ipynb:749
+msgid ""
+"Then we use UMAP to visualize the aligned embeddings. We can see that the"
+" two omics layers are now correctly aligned."
+msgstr "然后我们用UMAP来可视化对齐的嵌入。我们可以看到，两个全息图层现在已经正确对齐了。"
+
+#: ../training.ipynb:806
+msgid ""
+"To obtain feature embeddings, we can use the `encode_graph "
+"<api/scglue.models.scglue.SCGLUEModel.encode_graph.rst>`__ method."
+msgstr "为了获得特征嵌入，我们可以使用 `encode_graph "
+"<api/scglue.models.scglue.SCGLUEModel.encode_graph.rst>`__ 方法。"
+
+#: ../training.ipynb:940
+msgid ""
+"For regulatory inference based on the feature embeddings, please refer to"
+" our `case study <https://github.com/gao-"
+"lab/GLUE/blob/master/experiments/RegInf/s04_infer_gene_tf.py>`__."
+msgstr "关于基于特征嵌入的监管推理，请参考我们的 `案例研究 <https://github.com/gao-"
+"lab/GLUE/blob/master/experiments/RegInf/s04_infer_gene_tf.py>`__。"
+

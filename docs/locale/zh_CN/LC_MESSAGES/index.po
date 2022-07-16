@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Gao Lab, 2022
+# This file is distributed under the same license as the scglue package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scglue 0.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-14 12:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../index.rst:23
+msgid "Contents:"
+msgstr "目录："
+
+#: ../index.rst:2
+msgid "Welcome to scglue's documentation!"
+msgstr "欢迎来到scglue的使用手册！"
+
+#: ../index.rst:9
+msgid ""
+"``scglue`` implements the GLUE (**G**\\ raph **L**\\ inked **U**\\ nified"
+" **E**\\ mbedding) model, for unpaired single-cell multi-omics data "
+"integration."
+msgstr "``scglue`` 实现了模型GLUE（**G**\ raph **L**\ inked **U**\ nified **E**\ mbedding），能够用于整合非配对的单细胞多组学数据。"
+
+#: ../index.rst:11
+msgid ""
+"GLUE is a flexible framework that utilizes prior knowledge about feature "
+"relations to bridge the gap between different feature spaces during "
+"unpaired multi-modal data integration."
+msgstr "GLUE是一个灵活的框架，它利用包含特征关系的先验知识，在整合非配对的多模态数据的过程中能够弥合不同数据特征空间之间的差距。"
+
+#: ../index.rst:13
+msgid ""
+"In the context of single-cell multi-omics, the data modalities correspond"
+" to omics layers, e.g., scRNA-seq, scATAC-seq, snmC-seq, etc. "
+"\"Unpaired\" means that different omics layers are not probed in the same"
+" single cells, but rather independent samples of (presumably) the same "
+"cell population. Prior knowledge consists of prior regulatory "
+"interactions between omics features, e.g., RNA genes and ATAC peaks in "
+"the case of scRNA-seq and scATAC-seq integration. These interactions are "
+"compiled into a regulatory graph, and utilized by GLUE to help orient the"
+" multi-omics integration."
+msgstr "在单细胞多组学的背景下，每个数据模态代表了一个组学层，如scRNA-seq、scATAC-seq、snmC-seq等；“非配对”指的是不同组学层并不是在同一个单细胞中探测的，而是相对独立的样本（可能来自同一细胞群）；先验知识可以是组学特征之间的调控关系，如在整合scRNA-seq和scATAC-seq时的RNA基因和ATAC峰，这些相互作用被编译成一个调控图，帮助GLUE确定多组学整合的方向。"
+
+#: ../index.rst:19
+msgid ""
+"To get started with ``scglue``, check out the `installation guide "
+"<install.rst>`_ and `tutorials <tutorials.rst>`_."
+msgstr "如果要开始使用 ``scglue``，请查看`安装指南 <install.rst>`_ 和 `教程 <tutorials.rst>`_。"
+
+#: ../index.rst:21
+msgid ""
+"For more details about the GLUE framework, please check out our "
+"`publication <https://doi.org/10.1038/s41587-022-01284-4>`_."
+msgstr "关于GLUE框架的更多细节，请查看我们的`出版物 <https://doi.org/10.1038/s41587-022-01284-4>`_。"
+
+#: ../index.rst:36
+msgid "Indices and tables"
+msgstr "索引和表格"
+
+#: ../index.rst:38
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../index.rst:39
+msgid ":ref:`modindex`"
+msgstr ""
+

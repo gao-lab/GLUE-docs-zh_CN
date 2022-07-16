@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Gao Lab, 2022
+# This file is distributed under the same license as the scglue package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scglue 0.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-14 12:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../install.rst:2
+msgid "Installation guide"
+msgstr "安装指南"
+
+#: ../install.rst:6
+msgid "Main package"
+msgstr "主包"
+
+#: ../install.rst:8
+msgid ""
+"The ``scglue`` package can be installed via conda using one of the "
+"following commands:"
+msgstr "可以使用以下任意一条conda命令来安装``scglue`` 软件包："
+
+#: ../install.rst:16
+msgid "Or, it can also be installed via pip:"
+msgstr "或者，也可以使用pip命令："
+
+#: ../install.rst:24
+msgid ""
+"To avoid potential dependency conflicts, installing within a `conda "
+"environment <https://conda.io/projects/conda/en/latest/user-guide/tasks"
+"/manage-environments.html>`_ is recommended."
+msgstr "为避免可能出现的依赖冲突，建议在一个 `conda 环境 <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ 中进行安装。"
+
+#: ../install.rst:31
+msgid "Optional dependencies"
+msgstr "可选依赖项"
+
+#: ../install.rst:33
+msgid ""
+"Some functions in the ``scglue`` package use metacell aggregation via "
+"k-Means clustering, which can receive significant speed up with the "
+"`faiss <https://github.com/facebookresearch/faiss>`_ package."
+msgstr "``scglue`` 包中的一些函数通过k-Means聚类使用元胞聚合，安装 `faiss <https://github.com/facebookresearch/faiss>`_ 软件包可以显著提高运行速度。"
+
+#: ../install.rst:36
+msgid ""
+"You may install ``faiss`` following the official `guide "
+"<https://github.com/facebookresearch/faiss/blob/main/INSTALL.md>`_."
+msgstr "您可以通过官方`指南 <https://github.com/facebookresearch/faiss/blob/main/INSTALL.md>`_ 安装``faiss``。"
+
+#: ../install.rst:38
+msgid ""
+"Now you are all set. Proceed to `tutorials <tutorials.rst>`_ for how to "
+"use the ``scglue`` package."
+msgstr "好了，您已经准备好了！请进入`tutorials <tutorials.rst>`_ 了解如何使用 ``scglue`` 包。"
+
