@@ -1,1 +1,3 @@
-# GLUE-docs-zh_CN-dev
+# GLUE-docs-zh_CN
+
+It's a Chinese translation of GLUE documents.
