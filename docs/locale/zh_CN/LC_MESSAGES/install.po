@@ -10,8 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-14 12:13+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Pei-Wen Ji <jipw@mail.cbi.pku.edu.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +28,7 @@ msgstr "主包"
 msgid ""
 "The ``scglue`` package can be installed via conda using one of the "
 "following commands:"
-msgstr "可以使用以下任意一条conda命令来安装``scglue`` 软件包："
+msgstr "可以使用以下任意一条conda命令来安装 ``scglue`` 包："
 
 #: ../install.rst:16
 msgid "Or, it can also be installed via pip:"
@@ -40,7 +39,7 @@ msgid ""
 "To avoid potential dependency conflicts, installing within a `conda "
 "environment <https://conda.io/projects/conda/en/latest/user-guide/tasks"
 "/manage-environments.html>`_ is recommended."
-msgstr "为避免可能出现的依赖冲突，建议在一个 `conda 环境 <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ 中进行安装。"
+msgstr "为了避免可能出现的依赖冲突，建议在 `conda 环境 <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ 中安装。"
 
 #: ../install.rst:31
 msgid "Optional dependencies"
@@ -51,17 +50,17 @@ msgid ""
 "Some functions in the ``scglue`` package use metacell aggregation via "
 "k-Means clustering, which can receive significant speed up with the "
 "`faiss <https://github.com/facebookresearch/faiss>`_ package."
-msgstr "``scglue`` 包中的一些函数通过k-Means聚类使用元胞聚合，安装 `faiss <https://github.com/facebookresearch/faiss>`_ 软件包可以显著提高运行速度。"
+msgstr "``scglue`` 包中的一些函数通过k-Means聚类进行 \"metacell\" 聚合，安装 `faiss <https://github.com/facebookresearch/faiss>`_ 包可以显著提高运行速度。"
 
 #: ../install.rst:36
 msgid ""
 "You may install ``faiss`` following the official `guide "
 "<https://github.com/facebookresearch/faiss/blob/main/INSTALL.md>`_."
-msgstr "您可以通过官方`指南 <https://github.com/facebookresearch/faiss/blob/main/INSTALL.md>`_ 安装``faiss``。"
+msgstr "您可以通过官方 `指南 <https://github.com/facebookresearch/faiss/blob/main/INSTALL.md>`_ 安装 ``faiss``。"
 
 #: ../install.rst:38
 msgid ""
 "Now you are all set. Proceed to `tutorials <tutorials.rst>`_ for how to "
 "use the ``scglue`` package."
-msgstr "好了，您已经准备好了！请进入`tutorials <tutorials.rst>`_ 了解如何使用 ``scglue`` 包。"
+msgstr "好了，您已经准备好了！请进入 `教程 <tutorials.rst>`_ 了解如何使用 ``scglue`` 包。"
 

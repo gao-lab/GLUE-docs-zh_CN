@@ -10,8 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-14 12:13+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Pei-Wen Ji <jipw@mail.cbi.pku.edu.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,7 +24,7 @@ msgstr "示例数据集"
 msgid ""
 "By courtesy of the original authors, we provide here the following "
 "preprocessed data files used in our paper:"
-msgstr "感谢原作者，下面提供我们论文中使用的已经预处理过的数据文件："
+msgstr "感谢原作者，以下是我们论文中使用的已经预处理过的数据文件："
 
 #: ../data.rst:11
 msgid "Dataset"
@@ -33,7 +32,7 @@ msgstr "数据集"
 
 #: ../data.rst:12
 msgid "Protocol"
-msgstr "协议"
+msgstr "实验技术"
 
 #: ../data.rst:13
 msgid "Species"
@@ -45,7 +44,7 @@ msgstr "器官"
 
 #: ../data.rst:15
 msgid "Publication"
-msgstr "出版物"
+msgstr "论文"
 
 #: ../data.rst:16
 msgid "Source"
@@ -66,11 +65,11 @@ msgstr ""
 #: ../data.rst:20 ../data.rst:28 ../data.rst:44 ../data.rst:51 ../data.rst:58
 #: ../data.rst:89
 msgid "Mouse"
-msgstr "小鼠"
+msgstr ""
 
 #: ../data.rst:21 ../data.rst:45 ../data.rst:52 ../data.rst:59
 msgid "Cortex"
-msgstr "大脑皮层"
+msgstr ""
 
 #: ../data.rst:22
 msgid ""
@@ -105,7 +104,7 @@ msgstr ""
 
 #: ../data.rst:29
 msgid "Skin"
-msgstr "皮肤"
+msgstr ""
 
 #: ../data.rst:30
 msgid ""
@@ -139,11 +138,11 @@ msgstr ""
 
 #: ../data.rst:36 ../data.rst:65 ../data.rst:72 ../data.rst:80
 msgid "Human"
-msgstr "智人"
+msgstr ""
 
 #: ../data.rst:37
 msgid "PBMC"
-msgstr "外周血单个核细胞"
+msgstr ""
 
 #: ../data.rst:39
 msgid ""
@@ -239,7 +238,7 @@ msgstr ""
 
 #: ../data.rst:66 ../data.rst:73
 msgid "15 organs"
-msgstr "15个器官"
+msgstr ""
 
 #: ../data.rst:67
 msgid ""
@@ -293,7 +292,7 @@ msgstr ""
 
 #: ../data.rst:81
 msgid "Kidney"
-msgstr "肾脏"
+msgstr ""
 
 #: ../data.rst:82
 msgid ""
@@ -332,7 +331,7 @@ msgstr ""
 
 #: ../data.rst:90
 msgid "MOp"
-msgstr "初级运动皮层"
+msgstr ""
 
 #: ../data.rst:91
 msgid ""
